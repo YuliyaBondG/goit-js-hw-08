@@ -24,14 +24,13 @@ function onFormSubmit(e) {
     e.preventDefault();
 
     if (!email.value || !message.value) {
-        alert('заповніть всі поля');
+        alert('Заповніть всі поля');
     } else {
         e.target.reset();
         formData = {};
         console.log(JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)));
         localStorage.removeItem(LOCAL_STORAGE_KEY);
     }
-
 }
 
 function getValueFromLocalStorage() {
