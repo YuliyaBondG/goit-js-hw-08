@@ -38,5 +38,4 @@ function getValueFromLocalStorage() {
     message.value = formData.message || '';
 }
 
-
 getValueFromLocalStorage();
