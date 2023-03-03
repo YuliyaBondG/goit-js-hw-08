@@ -10,9 +10,6 @@ function currentTime(data) {
 }
 
 player
-.setCurrentTime(localStorage.getItem('videoplayer-current-time'))
-.catch(function (error) {
-    console.error(error.name);
-    console.log(error.message);
+.setCurrentTime(localStorage.getItem('videoplayer-current-time') || 0)
 
-});
+
